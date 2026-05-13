@@ -136,7 +136,7 @@ const DockNavItem = ({
   });
 
   return (
-    <Link href={href} className="relative items-center flex  px-10">
+    <Link href={href} className="relative items-center flex mx-3 px-6 lg:px-10">
       <motion.div
         ref={ref}
         style={{ 

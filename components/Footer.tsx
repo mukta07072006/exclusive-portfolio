@@ -37,7 +37,7 @@ const Footer = () => {
           Copyright © 2026 Moshud Muktadir
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center my-4 md:my-0 mb-2 md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <div
               key={info.id}

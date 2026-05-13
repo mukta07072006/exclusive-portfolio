@@ -68,7 +68,7 @@ const HeroContent = () => {
         </span>
         <span className="">
            <TextAnimate animation="blurIn" as="h1">
-      Transform ideas into seamless user experience
+      I transform ideas into seamless user experience
     </TextAnimate>
     <Link href={'/#projects'}>
     <RainbowButton  variant={"outline"} size={'lg'}>Explore Works</RainbowButton>
@@ -89,7 +89,7 @@ const HeroContent = () => {
   <AnimatedSpan>Optimizing assets & bundles...</AnimatedSpan>
   <AnimatedSpan>npm init</AnimatedSpan>
   
-  <TypingAnimation>Success! Project initialization completed.</TypingAnimation>
+  <TypingAnimation>Success! Project initialization successful</TypingAnimation>
 </Terminal>
       </motion.div>
     </div>
