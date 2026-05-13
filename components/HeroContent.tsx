@@ -83,7 +83,7 @@ const HeroContent = () => {
       </motion.div>
       <motion.div className={'mt-5 lg:mx-0 mx-10'}>
         <Terminal>
-  <TypingAnimation>npx install muktadir's-portfolio@latest --save</TypingAnimation>
+  <TypingAnimation>npx install muktadir&apos;s-portfolio@latest --save</TypingAnimation>
   <AnimatedSpan>Checking Node.js runtime...</AnimatedSpan>
   <AnimatedSpan>Loading project portfolio...</AnimatedSpan>
   <AnimatedSpan>Optimizing assets & bundles...</AnimatedSpan>
