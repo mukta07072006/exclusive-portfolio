@@ -67,7 +67,7 @@ const HeroContent = () => {
           
         </span>
         <span className="">
-           <TextAnimate animation="blurIn" as="h1">
+           <TextAnimate duration={0.7} animation="blurIn" as="h1">
       I transform ideas into seamless user experience
     </TextAnimate>
     <Link href={'/#projects'}>
