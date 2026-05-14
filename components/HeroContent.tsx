@@ -70,9 +70,9 @@ const HeroContent = () => {
            <TextAnimate duration={0.7} animation="blurIn" as="h1">
       I transform ideas into seamless user experience
     </TextAnimate>
-    <Link href={'/#projects'}>
+    <Link href={'/#projects'} className="relative z-[30]">
     <RainbowButton  variant={"outline"} size={'lg'}>Explore Works</RainbowButton>
-    
+
     </Link>
 
     
@@ -95,7 +95,7 @@ const HeroContent = () => {
     </div>
     
 
-      <div className="flex flex-wrap h-full items-center justify-center gap-4 py-12 px-4 w-full z-[3]">
+      <div className="flex flex-wrap h-full items-center justify-center gap-4 py-12 px-4 w-full z-[30]">
   {CardInfo.map((card) => (
     <Button
       key={card.id}

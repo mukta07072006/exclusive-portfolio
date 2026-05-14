@@ -12,7 +12,7 @@ const HeroTwo = () => {
         muted
         loop
         playsInline
-        className="absolute lg:-top-[360px] -top-[620px] left-0 w-full h-full lg:object-cover object-cover z-[1] rotate-180"
+        className="absolute -top-[65%] lg:-top-[65%] left-0 w-full h-[110%] lg:h-[130%] object-cover z-[1] rotate-180"
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>
