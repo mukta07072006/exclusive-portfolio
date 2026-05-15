@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
+
+// Lazy load Lottie for performance
+const Lottie = lazy(() => import("react-lottie"));
 
 
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -180,7 +180,9 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Suspense fallback={null}>
+                  <Lottie options={defaultOptions} eventListeners={[]} height={200} width={400} />
+                </Suspense>
               </div>
 
               <MagicButton

@@ -11,6 +11,18 @@ const nextConfig = {
         };
         return config;
     },
+    images: {
+        formats: ['image/avif', 'image/webp'],
+        remotePatterns: [],
+    },
+    experimental: {
+        optimizePackageImports: [
+            'react-icons',
+            'framer-motion',
+            '@react-three/fiber',
+            '@react-three/drei',
+        ],
+    },
 };
 
 export default nextConfig;

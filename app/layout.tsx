@@ -3,15 +3,18 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import StarsCanvas from "@/components/StarBG";
-import '@fontsource-variable/stack-sans-notch';
+import dynamic from "next/dynamic";
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+});
 
-
-
-const inter = Inter({ subsets: ["latin"] });
-
-
+const StarsCanvas = dynamic(() => import("@/components/StarBG"), {
+  ssr: false,
+  loading: () => <div className="fixed inset-0 z-20" />,
+});
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -20,22 +23,15 @@ const jsonLd = {
   "url": "https://your-portfolio-link.com",
   "jobTitle": "Web Developer",
   "description": "Professional Web Developer specializing in Next.js, React, and modern web technologies.",
-  "sameAs": [
+  sameAs: [
     "https://github.com/your-username",
     "https://linkedin.com/in/your-username",
     "https://twitter.com/your-username"
   ],
-  "knowsAbout": ["Web Development", "Next.js", "React", "JavaScript", "Frontend Engineering"]
+  knowsAbout: ["Web Development", "Next.js", "React", "JavaScript", "Frontend Engineering"]
 };
 
-// Inside your component return:
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-/>
-
-
-export const metadata = {
+export const metadata: Metadata = {
   title: "Moshud Muktadir | Professional Web Developer & Next.js Expert",
   description: "Portfolio of Moshud Muktadir, a Web Developer specializing in building high-performance, scalable web applications using Next.js and React.",
   keywords: ["Moshud Muktadir", "Web Developer", "Next.js Developer", "React Developer", "Frontend Engineer", "Portfolio"],
@@ -69,9 +65,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
-      <body className={`bg-[#030014]` }>
+      <body className={`${inter.className} bg-[#030014]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

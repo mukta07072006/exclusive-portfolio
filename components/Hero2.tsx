@@ -1,17 +1,23 @@
 "use client";
 
 import React from "react";
-import HeroContent from "@/components/HeroContent";
+import dynamic from "next/dynamic";
+
+const HeroContent = dynamic(() => import("@/components/HeroContent"), {
+  ssr: true,
+  loading: () => <div className="min-h-screen" />,
+});
 
 const HeroTwo = () => {
   return (
     <div className="relative flex flex-col min-h-screen w-full overflow-hidden" id="about-me">
-      
+
       <video
         autoPlay
         muted
         loop
         playsInline
+        preload="metadata"
         className="absolute -top-[65%] lg:-top-[65%] left-0 w-full h-[110%] lg:h-[130%] object-cover z-[1] rotate-180"
       >
         <source src="/blackhole.webm" type="video/webm" />

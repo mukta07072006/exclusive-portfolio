@@ -59,7 +59,7 @@ const Card = ({
   return (
     <motion.div
       // Subtle lift effect on hover (optional)
-      whileHover={{ scale: 1.02 }}
+      // whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       className="border border-violet-500/20 flex items-center justify-center
        max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl overflow-hidden"
@@ -73,10 +73,10 @@ const Card = ({
       </div>
 
       {/* Corner decorative icons */}
-      <Icon className="absolute h-10 w-10 -top-3 -left-3 text-violet-300/30" />
+      {/* <Icon className="absolute h-10 w-10 -top-3 -left-3 text-violet-300/30" />
       <Icon className="absolute h-10 w-10 -bottom-3 -left-3 text-violet-300/30" />
       <Icon className="absolute h-10 w-10 -top-3 -right-3 text-violet-300/30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 text-violet-300/30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 text-violet-300/30" /> */}
 
       {/* Content - Always visible, centered */}
       <div className="relative z-20 px-8 flex flex-col items-center justify-center h-full text-center">
