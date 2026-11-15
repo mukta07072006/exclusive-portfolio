@@ -58,25 +58,24 @@ const HeroContent = () => {
   }}
 >
   <Highlighter action="underline" color="violet">
-    Moshud Muktadir
+    This is Moshud Muktadir,
   </Highlighter>
 </motion.span>
-        <span className="mt-3 text-2xl md:text-3xl font-semibold text-purple">
-          Web Developer &amp; Next.js Engineer
+        <span className="relative inline-block">
+          
+          
         </span>
-        <TextAnimate
-          duration={0.7}
-          animation="blurIn"
-          as="span"
-          className="mt-3 text-2xl md:text-3xl font-semibold"
-        >
-          I transform ideas into seamless user experience
-        </TextAnimate>
-        <span className="relative z-[30] mt-6">
-          <Link href={'/#projects'}>
-            <RainbowButton  variant={"outline"} size={'lg'}>Explore Works</RainbowButton>
-          </Link>
-        </span>
+        <span className="">
+           <TextAnimate duration={0.7} animation="blurIn" as="span" className="block">
+      I transform ideas into seamless user experience
+    </TextAnimate>
+    <Link href={'/#projects'} className="relative z-[30]">
+    <RainbowButton  variant={"outline"} size={'lg'}>Explore Works</RainbowButton>
+
+    </Link>
+
+    
+    </span>
     
             
       </motion.h1>
