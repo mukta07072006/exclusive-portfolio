@@ -102,7 +102,7 @@ const AboutFaq = () => {
         About <span className="text-purple">Moshud Muktadir</span>
       </h2>
 
-      <div className="mt-14 grid gap-6 lg:grid-cols-5">
+      <div className="mx-auto mt-14 grid max-w-6xl gap-6 lg:grid-cols-5">
         {/* Bio card */}
         <div className="relative overflow-hidden rounded-3xl border border-white/[0.08] bg-[#08051b] p-7 md:p-10 lg:col-span-3">
           <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-purple/10 blur-3xl" />
@@ -206,7 +206,7 @@ const AboutFaq = () => {
       <h3 className="mt-16 text-center text-xs font-medium uppercase tracking-[0.3em] text-purple">
         Frequently asked questions
       </h3>
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
+      <div className="mx-auto mt-8 grid max-w-6xl gap-4 md:grid-cols-2">
         {faqs.map((faq, index) => (
           <div
             key={faq.question}

@@ -120,11 +120,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: {
-    icon: [{ url: "/profile.svg", type: "image/svg+xml" }],
-    shortcut: "/profile.svg",
-    apple: "/profile.svg",
-  },
   other: {
     "format-detection": "telephone=no",
   },

@@ -36,8 +36,8 @@ const CardInfo = [
 
 const HeroContent = () => {
   return (
-    <div className="flex flex-col h-full">
-    <div className="flex flex-col md:flex-row gap-3 items-center justify-center px-20 mt-40 w-full z-[0]">
+    <div className="flex flex-col h-full px-5 sm:px-10">
+    <div className="mx-auto w-full max-w-7xl flex flex-col md:flex-row gap-3 items-center justify-center mt-40 z-[0]">
       <motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ const HeroContent = () => {
         
       >
         <motion.span
-        className="text-3xl font-normal"
+        className="text-3xl font-semibold"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5 }}
@@ -80,7 +80,7 @@ const HeroContent = () => {
             
       </motion.h1>
       </motion.div>
-      <motion.div className={'mt-5 lg:mx-0 mx-10'}>
+      <motion.div className={'mt-5 lg:mx-0 mx-10 md:w-[26rem] md:shrink-0'}>
         <Terminal>
   <TypingAnimation>npx install muktadir&apos;s-portfolio@latest --save</TypingAnimation>
   <AnimatedSpan>Checking Node.js runtime...</AnimatedSpan>
