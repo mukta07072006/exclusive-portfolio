@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1479" height="793" viewBox="0 0 1479 793" fill="none">
+  <defs>
+    <linearGradient id="lx-bg" x1="0" y1="0" x2="1479" y2="793" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080A24" />
+      <stop offset="1" stop-color="#1A0C3A" />
+    </linearGradient>
+    <radialGradient id="lx-glow" cx="0" cy="0" r="1" gradientTransform="translate(1180 120) rotate(130) scale(680 560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA" stop-opacity="0.34" />
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="lx-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#CBACF9" />
+      <stop offset="1" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="lx-card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.09" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.03" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1479" height="793" fill="url(#lx-bg)" />
+  <rect width="1479" height="793" fill="url(#lx-glow)" />
+
+  <!-- window chrome -->
+  <rect x="0" y="0" width="1479" height="86" fill="#060515" fill-opacity="0.6" />
+  <circle cx="58" cy="43" r="8" fill="#CBACF9" fill-opacity="0.85" />
+  <circle cx="90" cy="43" r="8" fill="#CBACF9" fill-opacity="0.45" />
+  <circle cx="122" cy="43" r="8" fill="#CBACF9" fill-opacity="0.22" />
+  <rect x="1178" y="26" width="240" height="34" rx="17" fill="#CBACF9" fill-opacity="0.12" />
+  <text x="1204" y="49" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#E9DDFF">STUDENT DASHBOARD</text>
+
+  <!-- wordmark -->
+  <text x="70" y="300" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="700" fill="#FFFFFF" letter-spacing="-2">Learnix</text>
+  <text x="73" y="356" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="500" fill="#C1C2D3">Courses, quizzes &amp; progress</text>
+
+  <!-- progress -->
+  <text x="70" y="452" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#8E8AA8" letter-spacing="2">COURSE PROGRESS</text>
+  <rect x="70" y="474" width="520" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.08" />
+  <rect x="70" y="474" width="348" height="14" rx="7" fill="url(#lx-bar)" />
+  <text x="70" y="530" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#CBACF9">Module 4 of 6 · 67% complete</text>
+
+  <!-- stats -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <rect x="70" y="584" width="160" height="96" rx="20" fill="url(#lx-card)" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <text x="94" y="636" font-size="34" font-weight="700" fill="#FFFFFF">12</text>
+    <text x="94" y="662" font-size="15" fill="#9C99B4">courses</text>
+
+    <rect x="248" y="584" width="160" height="96" rx="20" fill="url(#lx-card)" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <text x="272" y="636" font-size="34" font-weight="700" fill="#FFFFFF">94%</text>
+    <text x="272" y="662" font-size="15" fill="#9C99B4">avg score</text>
+
+    <rect x="426" y="584" width="164" height="96" rx="20" fill="url(#lx-card)" stroke="#FFFFFF" stroke-opacity="0.08" />
+    <text x="450" y="636" font-size="34" font-weight="700" fill="#FFFFFF">7</text>
+    <text x="450" y="662" font-size="15" fill="#9C99B4">day streak</text>
+  </g>
+
+  <!-- lesson cards -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <rect x="732" y="170" width="646" height="196" rx="24" fill="url(#lx-card)" stroke="#FFFFFF" stroke-opacity="0.09" />
+    <rect x="768" y="206" width="72" height="72" rx="18" fill="#CBACF9" fill-opacity="0.18" stroke="#CBACF9" stroke-opacity="0.4" />
+    <text x="792" y="252" font-size="26" font-weight="700" fill="#CBACF9">01</text>
+    <text x="868" y="238" font-size="24" font-weight="600" fill="#FFFFFF">Data Structures</text>
+    <text x="868" y="270" font-size="17" fill="#9C99B4">Arrays, stacks and queues</text>
+    <rect x="868" y="292" width="392" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.09" />
+    <rect x="868" y="292" width="300" height="10" rx="5" fill="url(#lx-bar)" />
+    <text x="1276" y="302" font-size="15" font-weight="600" fill="#CBACF9">82%</text>
+
+    <rect x="732" y="396" width="646" height="196" rx="24" fill="url(#lx-card)" stroke="#FFFFFF" stroke-opacity="0.09" />
+    <rect x="768" y="432" width="72" height="72" rx="18" fill="#CBACF9" fill-opacity="0.18" stroke="#CBACF9" stroke-opacity="0.4" />
+    <text x="792" y="478" font-size="26" font-weight="700" fill="#CBACF9">02</text>
+    <text x="868" y="464" font-size="24" font-weight="600" fill="#FFFFFF">Algorithms</text>
+    <text x="868" y="496" font-size="17" fill="#9C99B4">Sorting and search patterns</text>
+    <rect x="868" y="518" width="392" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.09" />
+    <rect x="868" y="518" width="186" height="10" rx="5" fill="url(#lx-bar)" />
+    <text x="1276" y="528" font-size="15" font-weight="600" fill="#CBACF9">51%</text>
+
+    <rect x="732" y="622" width="646" height="110" rx="24" fill="url(#lx-card)" stroke="#FFFFFF" stroke-opacity="0.09" />
+    <text x="768" y="670" font-size="22" font-weight="600" fill="#FFFFFF">Quiz · Instant feedback</text>
+    <text x="768" y="702" font-size="17" fill="#9C99B4">10 questions · auto-graded</text>
+    <rect x="1216" y="654" width="128" height="46" rx="23" fill="#CBACF9" fill-opacity="0.9" />
+    <text x="1248" y="684" font-size="17" font-weight="700" fill="#150A33">START</text>
+  </g>
+</svg>

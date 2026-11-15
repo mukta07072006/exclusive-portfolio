@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1479" height="793" viewBox="0 0 1479 793" fill="none">
+  <defs>
+    <linearGradient id="ak-bg" x1="0" y1="0" x2="1479" y2="793" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0620" />
+      <stop offset="1" stop-color="#160B38" />
+    </linearGradient>
+    <radialGradient id="ak-glow" cx="0" cy="0" r="1" gradientTransform="translate(1130 130) rotate(128) scale(700 600)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBACF9" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#CBACF9" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="ak-glow2" cx="0" cy="0" r="1" gradientTransform="translate(160 760) rotate(-45) scale(520 420)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ak-chip" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#CBACF9" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.65" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1479" height="793" fill="url(#ak-bg)" />
+  <rect width="1479" height="793" fill="url(#ak-glow)" />
+  <rect width="1479" height="793" fill="url(#ak-glow2)" />
+
+  <!-- window chrome -->
+  <rect x="0" y="0" width="1479" height="86" fill="#070417" fill-opacity="0.65" />
+  <circle cx="58" cy="43" r="8" fill="#CBACF9" fill-opacity="0.85" />
+  <circle cx="90" cy="43" r="8" fill="#CBACF9" fill-opacity="0.45" />
+  <circle cx="122" cy="43" r="8" fill="#CBACF9" fill-opacity="0.22" />
+  <rect x="1219" y="26" width="200" height="34" rx="17" fill="#CBACF9" fill-opacity="0.12" />
+  <text x="1245" y="49" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#E9DDFF">LIVE · ROUND 3</text>
+
+  <!-- wordmark -->
+  <text x="70" y="300" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="700" fill="#FFFFFF" letter-spacing="-2">ArenaKit</text>
+  <text x="73" y="356" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="500" fill="#C1C2D3">Tournaments, duels &amp; prize pools</text>
+
+  <rect x="70" y="404" width="196" height="46" rx="23" fill="url(#ak-chip)" />
+  <text x="104" y="434" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#150A33">HOST MATCH</text>
+  <rect x="286" y="404" width="164" height="46" rx="23" fill="#FFFFFF" fill-opacity="0.06" stroke="#CBACF9" stroke-opacity="0.35" />
+  <text x="318" y="434" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" fill="#E9DDFF">JOIN DUEL</text>
+
+  <text x="70" y="524" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#8E8AA8" letter-spacing="2">PRIZE POOL</text>
+  <text x="70" y="600" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="-1">12,400</text>
+  <text x="70" y="642" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#CBACF9">credits · top 3 paid out</text>
+
+  <!-- bracket -->
+  <g stroke="#CBACF9" stroke-opacity="0.32" stroke-width="2">
+    <path d="M866 232 H966 V330 H1066" />
+    <path d="M866 428 H966 V330" />
+    <path d="M866 560 H966 V662 H1066" />
+    <path d="M866 720 H966 V662" />
+    <path d="M1186 330 H1266 V480 H1336" />
+    <path d="M1186 662 H1266 V480" />
+    <path d="M1336 480 H1400" />
+  </g>
+
+  <g font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600" fill="#EFE9FF">
+    <rect x="700" y="198" width="166" height="68" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#CBACF9" stroke-opacity="0.25" />
+    <text x="724" y="239">Nova</text>
+    <rect x="700" y="394" width="166" height="68" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#CBACF9" stroke-opacity="0.25" />
+    <text x="724" y="435">Rift</text>
+    <rect x="700" y="526" width="166" height="68" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#CBACF9" stroke-opacity="0.25" />
+    <text x="724" y="567">Echo</text>
+    <rect x="700" y="686" width="166" height="68" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#CBACF9" stroke-opacity="0.25" />
+    <text x="724" y="727">Vex</text>
+
+    <rect x="1066" y="296" width="120" height="68" rx="16" fill="#CBACF9" fill-opacity="0.16" stroke="#CBACF9" stroke-opacity="0.45" />
+    <text x="1090" y="337">Nova</text>
+    <rect x="1066" y="628" width="120" height="68" rx="16" fill="#CBACF9" fill-opacity="0.16" stroke="#CBACF9" stroke-opacity="0.45" />
+    <text x="1090" y="669">Vex</text>
+  </g>
+
+  <rect x="1336" y="440" width="108" height="80" rx="18" fill="url(#ak-chip)" />
+  <text x="1356" y="476" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#150A33">FINAL</text>
+  <text x="1356" y="502" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#150A33">BO5</text>
+</svg>
