@@ -10,7 +10,6 @@ import {
 import { Highlighter } from "./ui/highlighter";
 import { Button } from "./ui/MovingBorders";
 import { RainbowButton } from "@/components/ui/rainbow-button"
-import { redirect } from "next/navigation";
 import Link from "next/link";
 
 
@@ -59,24 +58,25 @@ const HeroContent = () => {
   }}
 >
   <Highlighter action="underline" color="violet">
-    This is Moshud Muktadir,
+    Moshud Muktadir
   </Highlighter>
 </motion.span>
-        <span className="relative inline-block">
-          
-          
+        <span className="mt-3 text-2xl md:text-3xl font-semibold text-purple">
+          Web Developer &amp; Next.js Engineer
         </span>
-        <span className="">
-           <TextAnimate duration={0.7} animation="blurIn" as="h1">
-      I transform ideas into seamless user experience
-    </TextAnimate>
-    <Link href={'/#projects'} className="relative z-[30]">
-    <RainbowButton  variant={"outline"} size={'lg'}>Explore Works</RainbowButton>
-
-    </Link>
-
-    
-    </span>
+        <TextAnimate
+          duration={0.7}
+          animation="blurIn"
+          as="span"
+          className="mt-3 text-2xl md:text-3xl font-semibold"
+        >
+          I transform ideas into seamless user experience
+        </TextAnimate>
+        <span className="relative z-[30] mt-6">
+          <Link href={'/#projects'}>
+            <RainbowButton  variant={"outline"} size={'lg'}>Explore Works</RainbowButton>
+          </Link>
+        </span>
     
             
       </motion.h1>
@@ -110,9 +110,9 @@ const HeroContent = () => {
     >
       <div className="flex flex-col lg:flex-row lg:items-center p-4 lg:p-6 gap-3 w-full">
         <div className="flex-1">
-          <h1 className="text-start text-xl md:text-2xl font-bold text-white">
+          <h3 className="text-start text-xl md:text-2xl font-bold text-white">
             {card.title}
-          </h1>
+          </h3>
           <p className="text-start text-indigo-200 mt-2 font-medium">
             {card.disc}
           </p>

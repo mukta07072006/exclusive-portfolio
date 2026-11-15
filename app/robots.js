@@ -1,9 +1,15 @@
+import { siteConfig } from "../lib/site";
+
 export default function robots() {
-    return {
-        rules: {
-            userAgent: '*',
-            allow: '/',
-        },
-        sitemap: 'https://moshudmuktadir.pro.bd/sitemap.xml',
-    }
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/"],
+      },
+    ],
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url,
+  };
 }

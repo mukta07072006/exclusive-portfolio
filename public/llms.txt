@@ -1,0 +1,26 @@
+# Moshud Muktadir — Web Developer & Next.js Engineer
+
+> Moshud Muktadir is a full-stack web developer based in Dhaka, Bangladesh, with 2+ years of experience and 20+ shipped projects. He builds fast, accessible web applications with Next.js, React, TypeScript, Tailwind CSS and Node.js, covering UI, APIs, databases and deployment.
+
+## Profile
+- Name: Moshud Muktadir
+- Role: Web Developer / Next.js Engineer (full stack)
+- Location: Dhaka, Bangladesh
+- Email: cr8v.muktadir@gmail.com
+- Website: https://moshudmuktadir.pro.bd
+- GitHub: https://github.com/mukta07072006
+- Experience: 2+ years, 20+ projects
+- Stack: Next.js, React, TypeScript, JavaScript, Node.js, Tailwind CSS, Three.js, Framer Motion, PostgreSQL, MongoDB, Stripe, Docker, Vercel, AWS
+- Availability: open to freelance, contract and full-time remote work
+
+## Projects
+- ArenaKit — esports tournament platform: hosted tournaments and 1v1 duels with live brackets, entry fees, prize pools, leaderboards and real-time match results.
+- Learnix — AI-assisted e-learning platform: role-based dashboards for students, instructors and admins, structured courses, instant-feedback quizzes and progress tracking.
+- 3D Solar System — interactive Three.js simulation of the planets.
+- Animated Apple iPhone 3D Website — GSAP and Three.js product page recreation.
+
+## Pages
+- https://moshudmuktadir.pro.bd — portfolio home: about, projects, testimonials, experience, approach, contact.
+
+## Contact
+Email cr8v.muktadir@gmail.com for project enquiries.

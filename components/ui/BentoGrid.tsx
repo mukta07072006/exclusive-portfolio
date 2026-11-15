@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, lazy, Suspense } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 

@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import dynamic from "next/dynamic";
+import StarsCanvas from "@/components/StarsCanvas";
+import { siteConfig } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,50 +12,129 @@ const inter = Inter({
   preload: true,
 });
 
-const StarsCanvas = dynamic(() => import("@/components/StarBG"), {
-  ssr: false,
-  loading: () => <div className="fixed inset-0 z-20" />,
-});
-
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Moshud Muktadir",
-  "url": "https://your-portfolio-link.com",
-  "jobTitle": "Web Developer",
-  "description": "Professional Web Developer specializing in Next.js, React, and modern web technologies.",
-  sameAs: [
-    "https://github.com/your-username",
-    "https://linkedin.com/in/your-username",
-    "https://twitter.com/your-username"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${siteConfig.url}/#person`,
+      name: siteConfig.name,
+      alternateName: ["Moshud", "Muktadir"],
+      url: siteConfig.url,
+      image: `${siteConfig.url}${siteConfig.ogImage}`,
+      email: `mailto:${siteConfig.email}`,
+      jobTitle: "Web Developer",
+      description:
+        "Moshud Muktadir is a full-stack web developer based in Dhaka, Bangladesh, specializing in Next.js, React, TypeScript and Node.js.",
+      nationality: { "@type": "Country", name: "Bangladesh" },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Dhaka",
+        addressCountry: "BD",
+      },
+      knowsAbout: siteConfig.knowsAbout,
+      knowsLanguage: ["en", "bn"],
+      sameAs: [siteConfig.github],
+      hasOccupation: {
+        "@type": "Occupation",
+        name: "Web Developer",
+        occupationLocation: { "@type": "City", name: "Dhaka" },
+        skills:
+          "Next.js, React, TypeScript, JavaScript, Node.js, Tailwind CSS, Three.js, SEO",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#website`,
+      url: siteConfig.url,
+      name: siteConfig.shortTitle,
+      description: siteConfig.description,
+      inLanguage: "en",
+      publisher: { "@id": `${siteConfig.url}/#person` },
+      copyrightHolder: { "@id": `${siteConfig.url}/#person` },
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${siteConfig.url}/#webpage`,
+      url: siteConfig.url,
+      name: siteConfig.title,
+      description: siteConfig.description,
+      isPartOf: { "@id": `${siteConfig.url}/#website` },
+      about: { "@id": `${siteConfig.url}/#person` },
+      mainEntity: { "@id": `${siteConfig.url}/#person` },
+      inLanguage: "en",
+    },
   ],
-  knowsAbout: ["Web Development", "Next.js", "React", "JavaScript", "Frontend Engineering"]
 };
 
 export const metadata: Metadata = {
-  title: "Moshud Muktadir | Professional Web Developer & Next.js Expert",
-  description: "Portfolio of Moshud Muktadir, a Web Developer specializing in building high-performance, scalable web applications using Next.js and React.",
-  keywords: ["Moshud Muktadir", "Web Developer", "Next.js Developer", "React Developer", "Frontend Engineer", "Portfolio"],
-  authors: [{ name: "Moshud Muktadir" }],
-  creator: "Moshud Muktadir",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https:moshudmuktadir.pro.bd",
-    title: "Moshud Muktadir | Web Developer Portfolio",
-    description: "Explore the work and skills of Moshud Muktadir, a specialist in modern web development.",
-    siteName: "Moshud Muktadir Portfolio",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
   },
-  linkdin: {
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  category: "technology",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "profile",
+    locale: "en_US",
+    url: "/",
+    siteName: siteConfig.shortTitle,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    firstName: "Moshud",
+    lastName: "Muktadir",
+    username: "mukta07072006",
+    images: [
+      {
+        url: `${siteConfig.url}${siteConfig.ogImage}`,
+        width: 1536,
+        height: 2048,
+        alt: `${siteConfig.name} — Web Developer`,
+      },
+    ],
+  },
+  twitter: {
     card: "summary_large_image",
-    title: "Moshud Muktadir | Web Developer",
-    description: "Web Developer focused on Next.js and React.",
-    creator: "moshud-muktadir",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [`${siteConfig.url}${siteConfig.ogImage}`],
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
+  icons: {
+    icon: [{ url: "/profile.svg", type: "image/svg+xml" }],
+    shortcut: "/profile.svg",
+    apple: "/profile.svg",
+  },
+  other: {
+    "format-detection": "telephone=no",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#030014",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -63,10 +143,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <script
           type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
@@ -77,7 +159,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <StarsCanvas/>
+          <StarsCanvas />
           {children}
         </ThemeProvider>
       </body>

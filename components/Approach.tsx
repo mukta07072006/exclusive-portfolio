@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
@@ -5,9 +7,9 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 const Approach = () => {
   return (
     <section className="w-full py-20">
-      <h1 className="heading">
+      <h2 className="heading">
         My <span className="text-purple">approach</span>
-      </h1>
+      </h2>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
           title="Planning & Strategy"
@@ -80,9 +82,9 @@ const Card = ({
 
       {/* Content - Always visible, centered */}
       <div className="relative z-20 px-8 flex flex-col items-center justify-center h-full text-center">
-        <h2 className="text-white text-3xl font-bold mb-4">
+        <h3 className="text-white text-3xl font-bold mb-4">
           {title}
-        </h2>
+        </h3>
         <p className="text-sm text-violet-200/90 leading-relaxed max-w-[260px]">
           {des}
         </p>
