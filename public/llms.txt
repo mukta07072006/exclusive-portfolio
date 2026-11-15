@@ -14,7 +14,7 @@
 - Availability: open to freelance, contract and full-time remote work
 
 ## Projects
-- ArenaKit — esports tournament platform: hosted tournaments and 1v1 duels with live brackets, entry fees, prize pools, leaderboards and real-time match results.
+- ArenaKit — Windows desktop app for Free Fire esports tournaments: imports Garena's official match CSV or manual results, calculates standings with custom scoring, and drives animated, data-bound broadcast overlays in OBS Studio or vMix from a local 1920×1080 browser source. Offline-first, one-time $9.99 license, Windows 10/11.
 - Learnix — AI-assisted e-learning platform: role-based dashboards for students, instructors and admins, structured courses, instant-feedback quizzes and progress tracking.
 - 3D Solar System — interactive Three.js simulation of the planets.
 - Animated Apple iPhone 3D Website — GSAP and Three.js product page recreation.

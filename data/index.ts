@@ -73,8 +73,8 @@ export const projects = [
   {
     id: 1,
     title: "ArenaKit",
-    des: "Esports tournament platform — host tournaments and 1v1 duels with live brackets, entry fees, prize pools and leaderboards.",
-    img: "/arenakit.svg",
+    des: "Windows app for Free Fire tournaments — import Garena's official match CSV, get standings instantly and take animated overlays live in OBS or vMix.",
+    img: "/arenakit-landing.svg",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/c.svg"],
     link: "https://github.com/mukta07072006",
     cta: "View on GitHub",

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1221" height="741" viewBox="0 0 1221 741" fill="none">
+  <defs>
+    <linearGradient id="ak-page" x1="0" y1="0" x2="1221" y2="741" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B1712" />
+      <stop offset="0.45" stop-color="#1A0E0A" />
+      <stop offset="1" stop-color="#0B0605" />
+    </linearGradient>
+    <radialGradient id="ak-warm" cx="0" cy="0" r="1" gradientTransform="translate(830 300) rotate(105) scale(760 560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0873F" stop-opacity="0.5" />
+      <stop offset="0.55" stop-color="#C2622F" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#C2622F" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="ak-warm2" cx="0" cy="0" r="1" gradientTransform="translate(150 60) rotate(20) scale(620 420)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8A4B32" stop-opacity="0.45" />
+      <stop offset="1" stop-color="#8A4B32" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ak-head2" x1="240" y1="0" x2="990" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD9A8" />
+      <stop offset="0.5" stop-color="#FFC07A" />
+      <stop offset="1" stop-color="#FF9A52" />
+    </linearGradient>
+    <linearGradient id="ak-logo" x1="86" y1="30" x2="130" y2="74" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2A65A" />
+      <stop offset="1" stop-color="#D2732F" />
+    </linearGradient>
+    <pattern id="ak-grid" width="76" height="76" patternUnits="userSpaceOnUse">
+      <path d="M76 0H0V76" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1221" height="741" fill="url(#ak-page)" />
+  <rect width="1221" height="741" fill="url(#ak-warm2)" />
+  <rect width="1221" height="741" fill="url(#ak-warm)" />
+  <rect width="1221" height="741" fill="url(#ak-grid)" />
+
+  <!-- header -->
+  <rect x="86" y="28" width="44" height="44" rx="10" fill="url(#ak-logo)" />
+  <path d="M108 42L119 64H97L108 42Z" fill="#2B1712" fill-opacity="0.85" />
+  <text x="148" y="58" font-family="Inter, system-ui, sans-serif" font-size="21" font-weight="700" fill="#FDF4EE">ArenaKit</text>
+
+  <g font-family="Inter, system-ui, sans-serif" font-size="15" fill="#E8DCD4" fill-opacity="0.85">
+    <text x="476" y="57">Features</text>
+    <text x="560" y="57">How it works</text>
+    <text x="672" y="57">Pricing</text>
+    <text x="737" y="57">FAQ</text>
+  </g>
+
+  <rect x="1050" y="26" width="120" height="44" rx="10" fill="#FBF6F1" />
+  <text x="1072" y="54" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#251512">Get ArenaKit</text>
+
+  <!-- eyebrow pill -->
+  <rect x="512" y="163" width="233" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.05" stroke="#E9C9AE" stroke-opacity="0.22" />
+  <text x="629" y="183" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" fill="#E7D6C9">Windows app for Free Fire tournaments</text>
+
+  <!-- headline -->
+  <text x="610" y="262" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="700" letter-spacing="-1.5" fill="#FEF6F0">Match results in.</text>
+  <text x="610" y="330" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="62" font-weight="700" letter-spacing="-1.5" fill="url(#ak-head2)">Live overlays out in seconds.</text>
+
+  <!-- subcopy -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="19" fill="#D6C6BA" text-anchor="middle">
+    <text x="610" y="384">ArenaKit is a Windows app for Free Fire tournaments. Import the results from</text>
+    <text x="610" y="414">Garena&#39;s official CSV or type them in by hand, and it calculates the standings</text>
+    <text x="610" y="444">and takes animated overlays live in OBS or vMix in seconds, all offline on</text>
+    <text x="610" y="474">your PC.</text>
+  </g>
+
+  <!-- buttons -->
+  <rect x="449" y="508" width="158" height="50" rx="12" fill="#FBF6F1" />
+  <rect x="470" y="525" width="17" height="12" rx="2.5" fill="#251512" fill-opacity="0.85" />
+  <text x="497" y="539" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#251512">Buy for $9.99</text>
+
+  <rect x="622" y="508" width="180" height="50" rx="12" fill="#FFFFFF" fill-opacity="0.04" stroke="#E9C9AE" stroke-opacity="0.28" />
+  <path d="M646 527L655 533L646 539V527Z" fill="#F5E6DA" />
+  <text x="666" y="539" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#F5E6DA">See how it works</text>
+
+  <!-- meta -->
+  <text x="610" y="592" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#BCA99C">Windows 10/11 · OBS Studio and vMix · One time payment, lifetime license · 2 devices</text>
+  <text x="610" y="618" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#8E7C71">v0.1.3 · 105 MB · released 13 November 2026 · windows installer</text>
+
+  <!-- section divider -->
+  <rect x="0" y="657" width="1221" height="1" fill="#FFFFFF" fill-opacity="0.07" />
+  <rect x="0" y="658" width="1221" height="83" fill="#FFFFFF" fill-opacity="0.012" />
+  <rect x="330" y="690" width="560" height="22" rx="11" fill="#FFFFFF" fill-opacity="0.05" />
+  <rect x="380" y="700" width="120" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.1" />
+  <rect x="520" y="700" width="90" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.07" />
+  <rect x="630" y="700" width="150" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.07" />
+</svg>

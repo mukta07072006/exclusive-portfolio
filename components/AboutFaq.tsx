@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "What projects has Moshud Muktadir built?",
     answer:
-      "Moshud Muktadir has shipped 20+ projects, including ArenaKit (an esports tournament and 1v1 duel platform with live brackets, entry fees and prize pools), Learnix (an AI-assisted e-learning platform with student, instructor and admin dashboards), a 3D solar system explorer built with Three.js, and an animated Apple iPhone 3D website.",
+      "Moshud Muktadir has shipped 20+ projects, including ArenaKit (a Windows app for Free Fire esports tournaments that imports Garena's official match CSV, calculates standings and drives animated OBS or vMix broadcast overlays), Learnix (an AI-assisted e-learning platform with student, instructor and admin dashboards), a 3D solar system explorer built with Three.js, and an animated Apple iPhone 3D website.",
   },
   {
     question: "What technologies does Moshud Muktadir use?",
@@ -121,8 +121,9 @@ const AboutFaq = () => {
             Working end to end with Next.js, React, TypeScript and Node.js, he
             has shipped 20+ projects: SaaS dashboards, real-time competition
             platforms and 3D interactive experiences. Recent work includes{" "}
-            <span className="font-semibold text-white">ArenaKit</span>, a
-            tournament and duel platform with live brackets and prize pools, and{" "}
+            <span className="font-semibold text-white">ArenaKit</span>, a Windows
+            app that turns official Free Fire match exports into live broadcast
+            overlays for OBS and vMix, and{" "}
             <span className="font-semibold text-white">Learnix</span>, an
             AI-assisted learning platform with role-based dashboards, quizzes
             and progress tracking.
